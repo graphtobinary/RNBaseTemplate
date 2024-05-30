@@ -1,79 +1,152 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# RNBaseTemplate
+================
 
-# Getting Started
+A React Native project template for building mobile applications.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Folder Structure
+-------------------
 
-## Step 1: Start the Metro Server
+### android/
+Android platform-specific code
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### ios/
+iOS platform-specific code
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### src/
+Source code for the app
 
-```bash
-# using npm
-npm start
+#### components/
+Reusable UI components
 
-# OR using Yarn
-yarn start
-```
+#### navigation/
+Navigation configuration
 
-## Step 2: Start your Application
+#### screens/
+Individual app screens
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+#### services/
+External service integrations
 
-### For Android
+#### utils/
+Utility functions
 
-```bash
-# using npm
-npm run android
+###.babelrc
+Babel configuration
 
-# OR using Yarn
-yarn android
-```
+###.eslintrc.js
+ESLint configuration
 
-### For iOS
+###.gitignore
+Git ignore file
 
-```bash
-# using npm
-npm run ios
+###.prettierrc
+Prettier configuration
 
-# OR using Yarn
-yarn ios
-```
+### babel.config.js
+Babel configuration for React Native
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### jest.config.js
+Jest configuration
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+### metro.config.js
+Metro configuration
 
-## Step 3: Modifying your App
+### package.json
+Project metadata and dependencies
 
-Now that you have successfully run the app, let's modify it.
+### README.md
+Project documentation
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### yarn.lock
+Yarn lock file
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Getting Started
+---------------
 
-## Congratulations! :tada:
+### Prerequisites
 
-You've successfully run and modified your React Native App. :partying_face:
+* Node.js version >= 18
+* Yarn version 3.6.4
+* React Native CLI installed globally
 
-### Now what?
+### Installation
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies: `yarn install`
 
-# Troubleshooting
+## Running the App
+---------------
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+### Android
 
-# Learn More
+1. Run `yarn android` to start the app on an Android emulator or device.
 
-To learn more about React Native, take a look at the following resources:
+### iOS
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+1. Run `yarn ios` to start the app on an iOS simulator (iPhone 15, 17.0 by default).
+
+## Development
+---------------
+
+### Start Metro Bundler
+
+1. Run `yarn start` to start the Metro Bundler.
+
+### Clean Android Build
+
+1. Run `yarn clean:android` to clean the Android build directory.
+
+### Linting
+
+1. Run `yarn lint` to run ESLint on the project.
+
+### Testing
+
+1. Run `yarn test` to run Jest tests.
+
+## Release
+---------------
+
+### Android Release
+
+1. Run `yarn release:android` to build the app in release mode for Android.
+
+## Dependencies
+--------------
+
+This project uses the following dependencies:
+
+* React Native 0.74.1
+* React 18.2.0
+* @react-navigation/native 6.1.17
+* @react-navigation/bottom-tabs 6.5.20
+* @react-navigation/drawer 6.6.15
+* @react-navigation/native-stack 6.9.26
+* react-native-device-info 11.1.0
+* react-native-encrypted-storage 4.0.3
+* react-native-gesture-handler 2.16.2
+* react-native-reanimated 3.11.0
+* react-native-safe-area-context 4.10.1
+* react-native-screens 3.31.1
+* react-native-svg 15.3.0
+
+## Dev Dependencies
+-------------------
+
+This project uses the following dev dependencies:
+
+* @babel/core 7.20.0
+* @babel/preset-env 7.20.0
+* @babel/runtime 7.20.0
+* @react-native/babel-preset 0.74.83
+* @react-native/eslint-config 0.74.83
+* @react-native/metro-config 0.74.83
+* @react-native/typescript-config 0.74.83
+* @types/react 18.2.6
+* @types/react-test-renderer 18.0.0
+* babel-jest 29.6.3
+* eslint 8.19.0
+* jest 29.6.3
+* prettier 2.8.8
+* react-test-renderer 18.2.0
+* typescript 5.0.4
